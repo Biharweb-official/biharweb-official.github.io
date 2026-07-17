@@ -30,7 +30,219 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
+/* PREMIUM BACKGROUND MASTER CSS */
+body{
+background:
+radial-gradient(circle at 15% 10%, rgba(255,77,0,0.18), transparent 30%),
+radial-gradient(circle at 85% 15%, rgba(0,140,255,0.12), transparent 30%),
+radial-gradient(circle at 50% 90%, rgba(255,0,120,0.08), transparent 35%),
+#050505;
+position:relative;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+background-size:60px 60px;
+mask-image:linear-gradient(to bottom,black,transparent);
+pointer-events:none;
+z-index:-1;
+}
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+right:-200px;
+top:300px;
+background:#FF4D00;
+filter:blur(180px);
+opacity:.12;
+border-radius:50%;
+pointer-events:none;
+z-index:-1;
+}
+section{
+background:transparent !important;
+}
+.service-card,
+.portfolio-card,
+.process-card,
+.testimonial-card,
+.price-card,
+.contact-form,
+.info-box,
+.hero-card,
+.stat-box,
+.feature-item{
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.08),
+rgba(255,255,255,.025)
+);
+border:1px solid rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+}
+.service-card:hover,
+.portfolio-card:hover,
+.process-card:hover,
+.testimonial-card:hover,
+.price-card:hover{
+box-shadow:
+0 20px 60px rgba(255,77,0,.18);
+}
+if(faq!==item){
+faq.classList.remove("active");
+}
 
+});
+
+item.classList.toggle("active");
+
+});
+
+});
+
+
+window.addEventListener("scroll",()=>{
+
+const backTop=document.getElementById("backTop");
+
+if(window.scrollY>500){
+
+backTop.classList.add("show");
+
+}else{
+
+backTop.classList.remove("show");
+
+}
+
+});
+
+
+document.getElementById("backTop").onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.querySelector(".loading").classList.add("hide");
+
+},800);
+
+});
+
+
+const reveals=document.querySelectorAll(".reveal");
+
+
+function reveal(){
+
+reveals.forEach(item=>{
+
+let windowHeight=window.innerHeight;
+
+let elementTop=item.getBoundingClientRect().top;
+
+if(elementTop < windowHeight-100){
+
+item.classList.add("active");
+
+}
+
+});
+
+}
+
+
+window.addEventListener("scroll",reveal);
+
+reveal();
+
+
+const form=document.querySelector(".contact-form form");
+
+
+form.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+
+let name=form.querySelector("input[type='text']").value;
+
+let email=form.querySelector("input[type='email']").value;
+
+let phone=form.querySelector("input[type='tel']").value;
+
+let message=form.querySelector("textarea").value;
+
+
+let whatsappMessage=
+`Hello BIHAR WEB,
+
+Name: ${name}
+
+Email: ${email}
+
+Phone: ${phone}
+
+Project:
+${message}`;
+
+
+window.open(
+"https://wa.me/917295979576?text="+encodeURIComponent(whatsappMessage),
+"_blank"
+);
+
+
+});
+
+
+</script>
+
+
+<script type="application/ld+json">
+
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"BIHAR WEB",
+"image":"logo.png",
+"telephone":"+917295979576",
+"email":"support@biharweb.com",
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Madhepura",
+"addressRegion":"Bihar",
+"addressCountry":"India"
+},
+"url":"https://biharweb.com",
+"priceRange":"₹₹",
+"description":"Premium website design and digital services agency in Bihar"
+}
+
+</script>
+
+
+</body>
+</html>
 *{
 margin:0;
 padding:0;
