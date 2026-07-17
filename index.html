@@ -375,14 +375,21 @@ margin-top:-2px;
 }
 
 .nav-links{
-display:flex;
-gap:34px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+@media (max-width:768px){
+
+.nav-links{
+    display:none;
 }
 
-.nav-links a{
-color:#ddd;
-font-weight:700;
-transition:.3s;
+.menu-btn{
+    display:flex;
+}
+
 }
 
 .nav-links a:hover{
