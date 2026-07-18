@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biharweb-official.github.io/sitemap.xml
