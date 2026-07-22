@@ -2644,7 +2644,31 @@ window.open(
 
 </script>
 </script>
-
+<!-- BIHAR WEB ROBOT AGENT START -->
+<style>
+#bw-agent-btn{position:fixed;bottom:20px;right:20px;width:85px;height:85px;background:transparent;border:none;cursor:pointer;z-index:99999;animation:bwFloat 3s ease-in-out infinite}
+#bw-agent-btn img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 10px 25px rgba(255,106,0,.6))}
+@keyframes bwFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+#bw-agent-box{position:fixed;bottom:110px;right:20px;width:350px;max-width:92vw;height:450px;background:#111;border:1px solid #333;border-radius:20px;display:none;flex-direction:column;z-index:99999;overflow:hidden;font-family:Inter,sans-serif}
+#bw-agent-head{background:linear-gradient(135deg,#ff6a00,#ff8c00);color:#fff;padding:14px 16px;font-weight:700;display:flex;justify-content:space-between}
+#bw-agent-msgs{flex:1;padding:14px;overflow-y:auto;background:#0a0a0a;color:#ddd;font-size:14px}
+.bw-msg{margin:10px 0;padding:10px 14px;border-radius:16px;max-width:85%;line-height:1.5;white-space:pre-line}
+.bw-bot{background:#1e1e1e;color:#fff}.bw-user{background:#ff6a00;color:#fff;margin-left:auto}
+#bw-agent-input{display:flex;border-top:1px solid #222;background:#111}
+#bw-agent-input input{flex:1;background:transparent;border:none;color:#fff;padding:14px;outline:none}
+#bw-agent-input button{background:#ff6a00;border:none;color:#fff;padding:0 20px;cursor:pointer;font-weight:800}
+</style>
+<div id="bw-agent-btn"><img src="Robot.png.jpeg" alt="AI"></div>
+<div id="bw-agent-box"><div id="bw-agent-head"><span>🤖 BIHAR WEB AI</span><span id="bw-close" style="cursor:pointer">✕</span></div><div id="bw-agent-msgs"><div class="bw-msg bw-bot">Namaste! 🙏 Main BIHAR WEB ka AI Robot hu. Price, Demo, Contact pucho - 24x7 yahi hu!</div></div><div id="bw-agent-input"><input id="bw-text" placeholder="Yaha likho..."><button id="bw-send">➤</button></div></div>
+<script>
+const btn=document.getElementById('bw-agent-btn'),box=document.getElementById('bw-agent-box'),close=document.getElementById('bw-close'),msgs=document.getElementById('bw-agent-msgs'),inp=document.getElementById('bw-text'),send=document.getElementById('bw-send');
+btn.onclick=()=>box.style.display=box.style.display==='flex'?'none':'flex';close.onclick=()=>box.style.display='none';
+function addMsg(t,c){const d=document.createElement('div');d.className='bw-msg '+c;d.innerText=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight}
+function botReply(q){q=q.toLowerCase();if(q.includes('price')||q.includes('kitna')) return "💰 Starter ₹2,999\nBusiness ₹5,999 ⭐\nPremium ₹9,999";if(q.includes('school')) return "🏫 School Demo: https://biharweb-official.github.io/saami-vivekanand-shool-demo/";if(q.includes('contact')||q.includes('number')) return "📞 +91 7295979576 - Naam+Kaam likho, 5 min me call karenge";return "Naam+Business likho, team WhatsApp pe details bhej degi. Call: 7295979576";}
+function sendMsg(){const t=inp.value.trim();if(!t) return;addMsg(t,'bw-user');inp.value='';setTimeout(()=>addMsg(botReply(t),'bw-bot'),600)}
+send.onclick=sendMsg;inp.addEventListener('keydown',e=>{if(e.key==='Enter') sendMsg()});
+</script>
+<!-- BIHAR WEB ROBOT AGENT END -->
 
 </body>
 </html>
