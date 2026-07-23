@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
 Sitemap: https://biharweb-official.github.io/sitemap.xml
+Disallow: /cdn-cgi/
+Disallow: /tmp/
+Disallow: /*?utm_*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
