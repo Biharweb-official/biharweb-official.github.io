@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-IN" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Offline - BiharWeb Official | Independent AI Agency | Production Ready v15</title>
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23D4AF37'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='800' font-size='48' fill='%23000'%3EBW%3C/text%3E%3C/svg%3E">
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#060606;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center} .card{width:min(420px,92%);background:rgba(20,20,20,0.8);border:1px solid rgba(212,175,55,0.18);border-radius:20px;padding:28px;backdrop-filter:blur(16px)} .logo{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,#D4AF37 0%,#F9E076 50%,#D4AF37 100%);display:flex;align-items:center;justify-content:center;color:#000;font-weight:800;font-size:1.6rem;margin:0 auto 16px} h1{font-family:serif;font-size:1.6rem;margin-bottom:8px;color:#fff} p{color:#a1a1a1;font-size:0.92rem;line-height:1.6;margin-bottom:16px;overflow-wrap:break-word} .btn{padding:12px 20px;border-radius:100px;background:linear-gradient(135deg,#D4AF37 0%,#F9E076 50%,#D4AF37 100%);color:#000;font-weight:700;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;margin:6px;min-height:44px} .btn-outline{padding:12px 20px;border-radius:100px;background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.15);color:#fff;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;margin:6px;min-height:44px;text-decoration:none} .status{padding:8px 12px;border-radius:100px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.20);color:#f87171;font-size:0.78rem;display:inline-flex;align-items:center;gap:6px;margin-bottom:16px} .status.online{background:rgba(34,197,94,0.12);border-color:rgba(34,197,94,0.20);color:#4ade80}</style>
+</head>
+<body>
+<div class="card">
+<div class="logo">BW</div>
+<div class="status" id="status"><span>●</span> Offline - No internet connection</div>
+<h1>You're Offline</h1>
+<p>BiharWeb Official is an independent AI-powered digital agency operated by Abinash Singh with AI assistance. Cached pages work offline. Real work, clean code, no fake claims. Verified support +91 7295979576. Production Ready v15.</p>
+<p style="font-size:0.82rem;color:#6B7280">Agency: BiharWeb Official<br>Founder: Abinash Singh<br>Model: Independent AI Agency<br>Location: Madhepura, Bihar - 852113<br>Support: +91 7295979576<br>PWA v15 Production Ready • GitHub Pages Ready • Launch Ready</p>
+<div style="margin-top:16px">
+<button class="btn" id="retryBtn" aria-label="Retry connection">Retry Connection →</button>
+<a href="/" class="btn-outline" aria-label="Go to homepage">Go to Home</a>
+</div>
+<p style="margin-top:16px;font-size:0.74rem;color:#6B7280">Automatic reconnect enabled. PWA cached: HTML, CSS, JS, Icons, 404, Privacy, Terms, Disclaimer, Offline. Works on Chrome, Edge, Firefox, Safari, Samsung Internet, Android, iPhone, Windows, macOS. No fake claims. Production Ready.</p>
+</div>
+<script>
+(function(){
+  const status=document.getElementById('status');
+  const retryBtn=document.getElementById('retryBtn');
+  function updateStatus(){
+    if(navigator.onLine){
+      status.innerHTML='<span>●</span> Back online - Reconnecting...';
+      status.className='status online';
+      setTimeout(()=>{location.reload();},800);
+    } else {
+      status.innerHTML='<span>●</span> Offline - No internet connection';
+      status.className='status';
+    }
+  }
+  window.addEventListener('online',updateStatus);
+  window.addEventListener('offline',updateStatus);
+  retryBtn.addEventListener('click',()=>{
+    retryBtn.textContent='Checking...';
+    setTimeout(()=>{if(navigator.onLine){location.reload();} else {retryBtn.textContent='Still Offline - Retry Again →';}},800);
+  });
+  setInterval(()=>{if(navigator.onLine) location.reload();},5000);
+})();
+</script>
+</body>
+</html>
