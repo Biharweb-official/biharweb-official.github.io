@@ -261,13 +261,11 @@ img, video, iframe, canvas { aspect-ratio: attr(width) / attr(height); max-width
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
-
 /* Transform optimization - replace top/left with transform */
 .stat1, .stat2, .stat3 { will-change: transform; }
 @media (min-width: 769px) {
   .stat-card { transform: translateZ(0); }
 }
-
 
 /* === FINAL PRODUCTION FIXES v16 - MOBILE / PERFORMANCE / ACCESSIBILITY / SECURITY === */
 .float-wa { bottom:24px !important; left:24px !important; width:56px !important; height:56px !important; z-index:998 !important; }
@@ -299,7 +297,6 @@ img{max-width:100%;height:auto;}
 *:focus-visible{outline:2px solid #D4AF37;outline-offset:3px;border-radius:4px;}
 .skip-link{position:absolute;top:-100%;left:16px;background:#D4AF37;color:#000;padding:10px 16px;border-radius:0 0 8px 8px;z-index:10001;text-decoration:none;font-weight:700;}
 .skip-link:focus{top:0;}
-
 
 .float-wa{bottom:24px !important;left:24px !important;width:56px !important;height:56px !important;z-index:998 !important;position:fixed;border-radius:50%;background:#25D366;border:2px solid #D4AF37;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;text-decoration:none;animation:pulseWa 2s infinite;}
 .float-call{bottom:24px !important;left:96px !important;width:56px !important;height:56px !important;z-index:998 !important;position:fixed;border-radius:50%;background:#0A0A0A;border:2px solid #D4AF37;display:flex;align-items:center;justify-content:center;color:#D4AF37;text-decoration:none;}
@@ -1991,7 +1988,6 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
 })();
 </script>
 
-
 <!-- Advanced 3D Background Elements -->
 <div class="hero-3d-scene" id="hero3DScene">
   <div class="hero-3d-object obj1"></div>
@@ -2067,7 +2063,7 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
       <div class="hero-subtitle reveal">Madhepura's Premium Digital Solutions</div>
       <p class="hero-desc reveal">We craft luxury digital experiences that elevate brands from Madhepura to global markets. Award-winning design, cutting-edge development, unmatched precision.</p>
       <div class="hero-ctas reveal"><a href="#services" class="btn-primary">Explore Services →</a><a href="#contact" class="btn-secondary">Contact Now</a></div>
-      <div class="hero-trust reveal"><div class="avatars"><span>AK</span><span>SR</span><span>PM</span><span>+50</span></div><div style="color:#a1a1a1;font-size:0.88rem;">⭐⭐⭐⭐⭐ <span style="color:#fff;font-weight:700;">4.9/5 Rated</span> • Trusted by 50+ brands</div></div>
+      <div class="hero-trust reveal"><div class="avatars"><span>AK</span><span>SR</span><span>PM</span><span>+50</span></div><div style="color:#a1a1a1;font-size:0.88rem;">⭐⭐⭐⭐⭐ <span style="color:#fff;font-weight:700;"></div></div>
       <div class="hero-social reveal"><a href="#" class="social-ic">IG</a><a href="#" class="social-ic">IN</a><a href="#" class="social-ic">Dr</a><a href="#" class="social-ic">Be</a></div>
     </div>
     <div class="hero-visual reveal">
@@ -2122,12 +2118,11 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   </div></div>
 </section>
 
-<section id="clients" class="clients-section"><div class="container"><div class="section-header reveal" style="margin-bottom:36px;"><span class="section-label">TRUSTED BY 50+ BRANDS</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">Trusted by <span class="gold-g">Premium Brands</span></h2></div><div class="logo-track reveal"><div class="logo-row"><div class="client-logo">TATA MOTORS</div><div class="client-logo">BIHAR GOV</div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div><div class="client-logo">MADHEPURA COLLEGE</div><div class="client-logo">BIHAR HAAT</div><div class="client-logo">KISAN CONNECT</div><div class="client-logo">ENTERPRISES HUB</div><div class="client-logo">TATA MOTORS</div><div class="client-logo">BIHAR GOV</div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div></div></div></div></section>
+<section id="clients" class="clients-section"><div class="container"><div class="section-header reveal" style="margin-bottom:36px;"><span class="section-label">TRUSTED BY 50+ BRANDS</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">Trusted by <span class="gold-g">Premium Brands</span></h2></div><div class="logo-track reveal"><div class="logo-row"><div class="client-logo"></div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div><div class="client-logo">MADHEPURA COLLEGE</div><div class="client-logo">BIHAR HAAT</div><div class="client-logo">KISAN CONNECT</div><div class="client-logo">ENTERPRISES HUB</div><div class="client-logo"></div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div></div></div></div></section>
 
 <section id="products" class="awards-section"><div class="orb orb2"></div><div class="grid-pat"></div><div class="container"><div class="section-header reveal"><span class="section-label">05 / CASE STUDIES & AWARDS</span><h2 class="section-title">Impact That <span class="gold-g">Speaks</span></h2><p class="section-desc">Real challenges, premium solutions, measurable results.</p></div><div class="case-grid"><div class="case-card reveal"><span class="case-label">Case Study 01</span><h4 style="color:#fff;margin:12px 0;">Bihar Haat E-commerce Growth</h4><p style="color:#a1a1a1;"><strong style="color:#fff;">Challenge:</strong> Zero online presence.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Solution:</strong> Luxury e-commerce with story pages.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Result:</strong> 340% growth, 12k+ orders.</p></div><div class="case-card reveal"><span class="case-label">Case Study 02</span><h4 style="color:#fff;margin:12px 0;">Sunrise School Transformation</h4><p style="color:#a1a1a1;"><strong style="color:#fff;">Challenge:</strong> Manual admissions chaos.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Solution:</strong> ERP + PWA + WhatsApp.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Result:</strong> 80% time saved, 200% enquiries.</p></div><div class="case-card reveal"><span class="case-label">Case Study 03</span><h4 style="color:#fff;margin:12px 0;">Kisan Connect Impact</h4><p style="color:#a1a1a1;"><strong style="color:#fff;">Challenge:</strong> Farmers exploited.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Solution:</strong> App with live mandi rates.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Result:</strong> 10k+ farmers, 25% higher price.</p></div></div><div class="awards-grid"><div class="award-card reveal"><div class="award-ic">🏆</div><span class="award-num" data-target="12">0</span><h4>Award Winning</h4><p style="color:#a1a1a1;font-size:0.84rem;">Luxury aesthetics recognized.</p></div><div class="award-card reveal"><div class="award-ic">⭐</div><span class="award-num" data-target="100">0</span><span style="color:#D4AF37;font-weight:800;">%</span><h4>Satisfaction</h4><p style="color:#a1a1a1;font-size:0.84rem;">Zero compromise quality.</p></div><div class="award-card reveal"><div class="award-ic">⚡</div><span class="award-num" data-target="48">0</span><span style="color:#D4AF37;">h</span><h4>Fast Delivery</h4><p style="color:#a1a1a1;font-size:0.84rem;">Average under 14 days.</p></div><div class="award-card reveal"><div class="award-ic">🎖</div><span class="award-num" data-target="5">0</span><span style="color:#D4AF37;">+</span><h4>Years</h4><p style="color:#a1a1a1;font-size:0.84rem;">Certified by Google, Meta.</p></div></div></div></section>
 
 <section id="gallery" class="gallery-section"><div class="orb orb1"></div><div class="grid-pat"></div><div class="container"><div class="section-header reveal"><span class="section-label">06 / GALLERY</span><h2 class="section-title">Craftsmanship In <span class="gold-g">Every Frame</span></h2><p class="section-desc">Visual diary of luxury interfaces we created.</p></div><div class="gallery-filters reveal"><button class="f-btn g-f-btn active" data-filter="all">All Works</button><button class="f-btn g-f-btn" data-filter="websites">Websites</button><button class="f-btn g-f-btn" data-filter="apps">Apps</button><button class="f-btn g-f-btn" data-filter="branding">Branding</button></div><div class="gal-grid reveal"><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#1e1e1e,#D4AF37);"></div><div class="gal-overlay">Luxury Business Website</div></div><div class="gal-item" data-category="apps"><div class="gal-thumb" style="background:linear-gradient(135deg,#2a1a1a,#F9E076);height:200px;"></div><div class="gal-overlay">Kisan Connect UI</div></div><div class="gal-item" data-category="branding"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a2a1a,#D4AF37);height:300px;"></div><div class="gal-overlay">Luxe Jewels Identity</div></div><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a1a2a,#8C7000);height:240px;"></div><div class="gal-overlay">School Portal Dashboard</div></div><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#2a2a1a,#D4AF37);height:280px;"></div><div class="gal-overlay">E-commerce Product Page</div></div><div class="gal-item" data-category="apps"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a1a1a,#F9E076);height:220px;"></div><div class="gal-overlay">Android App Screens</div></div><div class="gal-item" data-category="branding"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a2a2a,#D4AF37);height:260px;"></div><div class="gal-overlay">Brand Guidelines</div></div><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#1e1e1e,#D4AF37);height:200px;"></div><div class="gal-overlay">Portfolio Showcase</div></div></div></div><div id="lightbox" class="lightbox"><button class="lb-close">✕</button><button class="lb-nav lb-prev">‹</button><div><div id="lb-color"></div></div><button class="lb-nav lb-next">›</button></div></section>
-
 
 <div class="section-transition"><div class="transition-glow"></div><div class="transition-glass">PRODUCTS</div></div>
 
@@ -2225,7 +2220,6 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
 
 <section id="contact" style="padding:80px 0;background:#060606;text-align:center;"><div class="container"><span class="section-label">07 / CONTACT</span><h2 class="section-title">Ready to Build <span class="gold-g">Luxury?</span></h2><p class="section-desc" style="margin:0 auto 24px;max-width:600px;">Contact section architected and ready for Prompt 5 content injection.</p><a href="tel:+91XXXXXXXXXX" class="btn-primary" style="margin-top:16px;">Contact Now</a></div></section>
 
-
 <section id="testimonials-luxury" class="testimonial-enhanced">
   <div class="orb orb1" style="opacity:0.07;"></div><div class="grid-pat"></div>
   <div class="container">
@@ -2289,102 +2283,7 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
 <section id="why-choose" class="why-section">
   <div class="orb orb1" style="opacity:0.06;"></div><div class="grid-pat"></div>
   <div class="container">
-    <div class="section-header reveal"><span class="section-label">WHY CHOOSE US / BENEFITS</span><h2 class="section-title split-text">Why <span class="gold-g">1,000+ Businesses</span> Choose Us</h2></div>
-    <div class="why-grid">
-      <div class="why-card reveal"><div class="why-icon">💰</div><h4>Affordable</h4><p>Premium quality at honest pricing, no hidden costs, EMI available.</p></div>
-      <div class="why-card reveal"><div class="why-icon">⭐</div><h4>Premium Quality</h4><p>Awwwards-level design, luxury aesthetics, pixel-perfect craftsmanship.</p></div>
-      <div class="why-card reveal"><div class="why-icon">⚡</div><h4>Fast Delivery</h4><p>On-time delivery, 98% on-time rate, average 7-14 days premium.</p></div>
-      <div class="why-card reveal"><div class="why-icon">🛡️</div><h4>24/7 Support</h4><p>Round-the-clock support via WhatsApp, call, email – always available.</p></div>
-      <div class="why-card reveal"><div class="why-icon">🎨</div><h4>Modern Design</h4><p>Cutting-edge UI/UX, trends, animations, luxury black & gold theme.</p></div>
-      <div class="why-card reveal"><div class="why-icon">📈</div><h4>Scalable</h4><p>Built to scale from startup to enterprise, future-proof architecture.</p></div>
-      <div class="why-card reveal"><div class="why-icon">🔒</div><h4>Secure</h4><p>SSL, backups, security hardened, GDPR compliant, safe & secure.</p></div>
-      <div class="why-card reveal"><div class="why-icon">🚀</div><h4>Optimized</h4><p>SEO optimized, fast loading, Lighthouse 90+, performance focused.</p></div>
-    </div>
-  </div>
-</section>
-<section id="trust-badges" class="badges-section">
-  <div class="container"><div class="badges-flex reveal"><div class="badge-item"><span>🔒</span> Secure Website</div><div class="badge-item"><span>🛡️</span> SSL Protected</div><div class="badge-item"><span>📱</span> 100% Responsive</div><div class="badge-item"><span>📈</span> SEO Optimized</div><div class="badge-item"><span>⚡</span> Fast Loading</div><div class="badge-item"><span>🐙</span> GitHub Ready</div><div class="badge-item"><span>🤖</span> AI Powered</div><div class="badge-item"><span>⭐</span> Premium Support</div><div class="badge-item"><span>✓</span> Verified Business</div><div class="badge-item"><span>🏆</span> Award Winning</div></div></div>
-</section>
-<section id="blog" class="blog-section">
-  <div class="orb orb1" style="opacity:0.06;"></div><div class="grid-pat"></div>
-  <div class="container">
-    <div class="section-header reveal"><span class="section-label">BLOG / KNOWLEDGE</span><h2 class="section-title split-text">Premium Insights For <span class="gold-g">Growth</span></h2><p class="section-desc para-reveal">Enterprise-level knowledge center with tutorials, guides and industry insights from Madhepura's luxury agency.</p></div>
-    <div class="blog-search reveal"><input type="text" id="blogSearch" placeholder="Search articles, tutorials, guides..."><button>Search</button></div>
-    <div class="blog-categories reveal"><button class="cat-btn active" data-cat="all">All</button><button class="cat-btn" data-cat="web">Web Development</button><button class="cat-btn" data-cat="seo">SEO</button><button class="cat-btn" data-cat="marketing">Digital Marketing</button><button class="cat-btn" data-cat="ai">AI</button><button class="cat-btn" data-cat="design">Graphic Design</button><button class="cat-btn" data-cat="branding">Branding</button><button class="cat-btn" data-cat="business">Business Tips</button><button class="cat-btn" data-cat="tech">Technology News</button></div>
-    <div class="blog-featured">
-      <div class="blog-card reveal" data-cat="web"><div class="blog-thumb" style="height:280px;background:linear-gradient(135deg,#1a1a1a,#D4AF37);"><span class="blog-badge">FEATURED • Web Development</span></div><div class="blog-content"><div class="blog-meta"><span>📅 20 July 2026</span><span>⏱️ 8 min read</span><span>👁️ 2.4k views</span></div><h3>How We Built Awwwards-Level Website from Madhepura – Complete Case Study</h3><p>Step-by-step breakdown of how BiharWeb Official crafted a world-class luxury website from Tier-3 city with black & gold aesthetics, 3D effects and premium animations.</p><div class="blog-author"><div class="blog-author-avatar">AK</div><span style="color:#a1a1a1;font-size:0.8rem;">Abinash Singh • Founder • 5 min ago</span><span style="margin-left:auto;color:#D4AF37;font-size:0.75rem;">#WebDev #Luxury</span></div></div></div>
-      <div style="display:flex;flex-direction:column;gap:16px;">
-        <div class="blog-card reveal" data-cat="seo"><div class="blog-thumb" style="height:120px;background:linear-gradient(135deg,#1a2a1a,#D4AF37);"><span class="blog-badge">TRENDING • SEO</span></div><div class="blog-content"><div class="blog-meta"><span>📅 18 July 2026</span><span>⏱️ 5 min</span></div><h3>SEO in 2026: What Actually Works for Bihar Businesses</h3><p>Latest SEO strategies that helped our clients rank #1 in Madhepura.</p></div></div>
-        <div class="blog-card reveal" data-cat="ai"><div class="blog-thumb" style="height:120px;background:linear-gradient(135deg,#2a1a1a,#F9E076);"><span class="blog-badge">AI • Guide</span></div><div class="blog-content"><div class="blog-meta"><span>📅 15 July 2026</span><span>⏱️ 6 min</span></div><h3>AI Automation for Small Businesses – Complete Guide</h3><p>How AI chatbots saved 20 hours/week for our clients.</p></div></div>
-      </div>
-    </div>
-    <div class="blog-grid">
-      <div class="blog-card reveal" data-cat="design"><div class="blog-thumb" style="background:linear-gradient(135deg,#2a2a1a,#D4AF37);"><span class="blog-badge">Graphic Design</span></div><div class="blog-content"><div class="blog-meta"><span>📅 12 July</span><span>⏱️ 4 min</span></div><h3>Luxury Brand Identity – Psychology of Gold & Black</h3><p>Why black & gold converts 3x more for premium businesses.</p></div></div>
-      <div class="blog-card reveal" data-cat="business"><div class="blog-thumb" style="background:linear-gradient(135deg,#1a1a2a,#8C7000);"><span class="blog-badge">Business Tips</span></div><div class="blog-content"><div class="blog-meta"><span>📅 10 July</span><span>⏱️ 7 min</span></div><h3>How to Get First 100 Customers for Your Business in Bihar</h3><p>Proven strategies from 500+ businesses we helped.</p></div></div>
-      <div class="blog-card reveal" data-cat="marketing"><div class="blog-thumb" style="background:linear-gradient(135deg,#1a2a1a,#D4AF37);"><span class="blog-badge">Digital Marketing</span></div><div class="blog-content"><div class="blog-meta"><span>📅 8 July</span><span>⏱️ 5 min</span></div><h3>Meta Ads vs Google Ads – Where to Spend in 2026?</h3><p>ROI breakdown from ₹50L ad spend managed by BiharWeb.</p></div></div>
-      <div class="blog-card reveal" data-cat="tech"><div class="blog-thumb" style="background:linear-gradient(135deg,#1a1a1a,#F9E076);"><span class="blog-badge">Technology News</span></div><div class="blog-content"><div class="blog-meta"><span>📅 5 July</span><span>⏱️ 3 min</span></div><h3>Top 10 Web Technologies You Must Use in 2026</h3><p>Next.js, Three.js, GSAP – what we use at BiharWeb.</p></div></div>
-      <div class="blog-card reveal" data-cat="branding"><div class="blog-thumb" style="background:linear-gradient(135deg,#2a1a1a,#D4AF37);"><span class="blog-badge">Branding</span></div><div class="blog-content"><div class="blog-meta"><span>📅 2 July</span><span>⏱️ 6 min</span></div><h3>From Local to Luxury – Rebranding Case Study</h3><p>How Luxe Jewels became premium brand with our identity.</p></div></div>
-      <div class="blog-card reveal" data-cat="web"><div class="blog-thumb" style="background:linear-gradient(135deg,#1e1e1e,#D4AF37);"><span class="blog-badge">Web Development</span></div><div class="blog-content"><div class="blog-meta"><span>📅 28 June</span><span>⏱️ 8 min</span></div><h3>eCommerce Performance – How We Achieved 95+ Lighthouse</h3><p>Optimization secrets behind Bihar Haat's blazing speed.</p></div></div>
-    </div>
-  </div>
-</section>
-<section id="knowledge" class="knowledge-section">
-  <div class="orb orb2" style="opacity:0.05;"></div><div class="grid-pat"></div>
-  <div class="container">
-    <div class="section-header reveal"><span class="section-label">KNOWLEDGE CENTER / FREE LEARNING</span><h2 class="section-title split-text">Free Resources To <span class="gold-g">Grow Your Business</span></h2></div>
-    <div class="knowledge-grid">
-      <div class="knowledge-card reveal"><div class="knowledge-icon">📚</div><h4 style="color:#fff;margin-bottom:6px;">Tutorials</h4><p style="color:#a1a1a1;font-size:0.82rem;">Step-by-step tutorials for website, SEO, marketing – free.</p></div>
-      <div class="knowledge-card reveal"><div class="knowledge-icon">🎁</div><h4 style="color:#fff;margin-bottom:6px;">Free Resources</h4><p style="color:#a1a1a1;font-size:0.82rem;">Templates, checklists, guides worth ₹50k+ free for community.</p></div>
-      <div class="knowledge-card reveal"><div class="knowledge-icon">⬇️</div><h4 style="color:#fff;margin-bottom:6px;">Download Center</h4><p style="color:#a1a1a1;font-size:0.82rem;">Company profile, brochures, price list, portfolio PDFs.</p></div>
-      <div class="knowledge-card reveal"><div class="knowledge-icon">💡</div><h4 style="color:#fff;margin-bottom:6px;">Website Tips</h4><p style="color:#a1a1a1;font-size:0.82rem;">Pro tips to improve your website conversion by 3x.</p></div>
-      <div class="knowledge-card reveal"><div class="knowledge-icon">📈</div><h4 style="color:#fff;margin-bottom:6px;">SEO Guides</h4><p style="color:#a1a1a1;font-size:0.82rem;">Complete SEO playbook that ranked 100+ sites on #1.</p></div>
-      <div class="knowledge-card reveal"><div class="knowledge-icon">🤖</div><h4 style="color:#fff;margin-bottom:6px;">AI Guides</h4><p style="color:#a1a1a1;font-size:0.82rem;">AI tools and automation guides for small businesses.</p></div>
-      <div class="knowledge-card reveal"><div class="knowledge-icon">🎨</div><h4 style="color:#fff;margin-bottom:6px;">Design Resources</h4><p style="color:#a1a1a1;font-size:0.82rem;">Free icons, fonts, color palettes used by premium agencies.</p></div>
-      <div class="knowledge-card reveal"><div class="knowledge-icon">🚀</div><h4 style="color:#fff;margin-bottom:6px;">Business Growth Tips</h4><p style="color:#a1a1a1;font-size:0.82rem;">Growth hacks from 500+ businesses we scaled.</p></div>
-    </div>
-  </div>
-</section>
-<section id="faq" class="faq-section">
-  <div class="orb orb1" style="opacity:0.05;"></div><div class="grid-pat"></div>
-  <div class="container">
-    <div class="section-header reveal"><span class="section-label">FAQ / ANSWERS</span><h2 class="section-title split-text">Everything You <span class="gold-g">Need To Know</span></h2></div>
-    <div class="faq-wrapper">
-      <input type="text" id="faqSearch" class="faq-search" placeholder="Search FAQ... e.g., cost, delivery, hosting">
-      <div class="faq-categories"><button class="cat-btn active" data-filter="all">All</button><button class="cat-btn" data-filter="pricing">Pricing</button><button class="cat-btn" data-filter="delivery">Delivery</button><button class="cat-btn" data-filter="support">Support</button><button class="cat-btn" data-filter="technical">Technical</button></div>
-      <div id="faqList">
-        <div class="faq-item active" data-cat="pricing"><div class="faq-question"><div><span>💰</span> How much does a website cost?</div><span>▼</span></div><div class="faq-answer"><p>Business website starts at ₹12,999, eCommerce at ₹29,999, School at ₹19,999. Custom quote via calculator. EMI available. No hidden costs, transparent pricing with luxury quality.</p></div></div>
-        <div class="faq-item" data-cat="delivery"><div class="faq-question"><div><span>⏱️</span> What is delivery time?</div><span>▼</span></div><div class="faq-answer"><p>Standard 7-14 days, Fast 7 days (+₹5k), Express 3 days (+₹10k). Average 98% on-time delivery. We never miss deadlines.</p></div></div>
-        <div class="faq-item" data-cat="pricing"><div class="faq-question"><div><span>💳</span> What payment methods?</div><span>▼</span></div><div class="faq-answer"><p>UPI, Bank Transfer, Razorpay, Credit/Debit Card, EMI. 50% advance, 50% after approval. GST invoice provided.</p></div></div>
-        <div class="faq-item" data-cat="support"><div class="faq-question"><div><span>🛡️</span> What about support?</div><span>▼</span></div><div class="faq-answer"><p>24/7 support via WhatsApp, Call, Email. 1 month free in Basic, 3 months in Professional, 6 months Business, 12 months Enterprise. Lifetime bug fix guarantee.</p></div></div>
-        <div class="faq-item" data-cat="technical"><div class="faq-question"><div><span>📈</span> Is SEO included?</div><span>▼</span></div><div class="faq-answer"><p>Basic SEO in all plans, Advanced in Professional, Premium in Business+. Monthly SEO package ₹8,999/mo with ranking guarantee strategies.</p></div></div>
-        <div class="faq-item" data-cat="technical"><div class="faq-question"><div><span>🌐</span> Do you provide hosting & domain?</div><span>▼</span></div><div class="faq-answer"><p>Yes! Domain + Hosting setup, SSL, backups included. Hosting ₹2k/year, domain ₹800/year. We handle everything, you focus on business.</p></div></div>
-        <div class="faq-item" data-cat="technical"><div class="faq-question"><div><span>🔧</span> What about maintenance?</div><span>▼</span></div><div class="faq-answer"><p>Maintenance plans from ₹3k/6 months. Includes updates, backups, security, small changes. 24/7 monitoring, uptime guarantee.</p></div></div>
-        <div class="faq-item" data-cat="technical"><div class="faq-question"><div><span>📱</span> Do you build Android apps?</div><span>▼</span></div><div class="faq-answer"><p>Yes! Native Android apps from ₹39,999 with Kotlin, Firebase, Play Store deploy. PWA also available from ₹15k. 25 days delivery.</p></div></div>
-        <div class="faq-item" data-cat="pricing"><div class="faq-question"><div><span>📢</span> Digital marketing cost?</div><span>▼</span></div><div class="faq-answer"><p>Digital Marketing from ₹14,999/mo includes Meta + Google Ads, content, analytics. ROI-focused, 300% growth case studies.</p></div></div>
-        <div class="faq-item" data-cat="pricing"><div class="faq-question"><div><span>↩️</span> Refund policy?</div><span>▼</span></div><div class="faq-answer"><p>100% satisfaction guarantee with unlimited revisions till approval. Refund available before design approval stage as per terms.</p></div></div>
-        <div class="faq-item" data-cat="support"><div class="faq-question"><div><span>📞</span> How to contact?</div><span>▼</span></div><div class="faq-answer"><p>WhatsApp: +91 7295979576 (5 min response), Call: same number 24/7, Email: biharwebofficial@gmail.com, Office: Madhepura, Bihar.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="careers" class="career-section">
-  <div class="orb orb2" style="opacity:0.05;"></div><div class="grid-pat"></div>
-  <div class="container">
-    <div class="section-header reveal"><span class="section-label">CAREERS / JOIN US</span><h2 class="section-title split-text">Join The <span class="gold-g">Dream Team</span></h2><p class="section-desc para-reveal">Build luxury digital experiences from Madhepura with global impact.</p></div>
-    <div class="career-grid">
-      <div class="career-card reveal"><span class="career-type">FULL-TIME • REMOTE</span><h4 style="color:#fff;margin:8px 0;">Frontend Developer</h4><p style="color:#a1a1a1;font-size:0.85rem;margin-bottom:12px;">Next.js, React, GSAP, Three.js – build Awwwards-level websites.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;"><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">Next.js</span><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">React</span><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">GSAP</span></div><a href="#booking" class="btn-order" style="padding:8px 16px;font-size:0.8rem;display:inline-block;">Apply Now</a></div>
-      <div class="career-card reveal"><span class="career-type">INTERNSHIP • 3 MONTHS</span><h4 style="color:#fff;margin:8px 0;">UI/UX Design Intern</h4><p style="color:#a1a1a1;font-size:0.85rem;margin-bottom:12px;">Learn luxury UI design from experts, Figma, Awwwards standards.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;"><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">Figma</span><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">UI/UX</span><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">Luxury</span></div><a href="#booking" class="btn-order" style="padding:8px 16px;font-size:0.8rem;display:inline-block;">Apply Now</a></div>
-      <div class="career-card reveal"><span class="career-type">FREELANCE • REMOTE</span><h4 style="color:#fff;margin:8px 0;">SEO Expert</h4><p style="color:#a1a1a1;font-size:0.85rem;margin-bottom:12px;">Rank clients #1 on Google, analytics, growth strategies.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;"><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">SEO</span><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">Analytics</span></div><a href="#booking" class="btn-order" style="padding:8px 16px;font-size:0.8rem;display:inline-block;">Apply Now</a></div>
-      <div class="career-card reveal"><span class="career-type">FULL-TIME • MADHEPURA</span><h4 style="color:#fff;margin:8px 0;">Support Executive</h4><p style="color:#a1a1a1;font-size:0.85rem;margin-bottom:12px;">24/7 premium support for 1000+ clients, WhatsApp & call handling.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;"><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">Support</span><span style="padding:4px 8px;border-radius:100px;background:rgba(212,175,55,0.08);color:#a1a1a1;font-size:0.7rem;">Communication</span></div><a href="#booking" class="btn-order" style="padding:8px 16px;font-size:0.8rem;display:inline-block;">Apply Now</a></div>
-    </div>
-    <div style="max-width:700px;margin:32px auto 0;padding:20px;border-radius:16px;background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.15);display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;">
-      <div><div style="color:#D4AF37;font-size:1.2rem;">🎁</div><div style="color:#fff;font-size:0.85rem;font-weight:600;margin-top:6px;">Benefits</div><div style="color:#a1a1a1;font-size:0.72rem;">Flexible, growth, bonus</div></div>
-      <div><div style="color:#D4AF37;font-size:1.2rem;">🏢</div><div style="color:#fff;font-size:0.85rem;font-weight:600;margin-top:6px;">Culture</div><div style="color:#a1a1a1;font-size:0.72rem;">Luxury, innovation, care</div></div>
-      <div><div style="color:#D4AF37;font-size:1.2rem;">🌍</div><div style="color:#fff;font-size:0.85rem;font-weight:600;margin-top:6px;">Remote Work</div><div style="color:#a1a1a1;font-size:0.72rem;">Work from anywhere</div></div>
-    </div>
-  </div>
-</section>
-<section id="newsletter" class="newsletter-section">
+    <div class="section-header reveal"><span class="section-label">WHY CHOOSE US / newsletter" class="newsletter-section">
   <div class="orb orb1" style="opacity:0.05;"></div><div class="grid-pat"></div>
   <div class="container">
     <div class="newsletter-box reveal"><div style="position:relative;z-index:2;"><span style="color:#D4AF37;font-size:0.8rem;letter-spacing:0.2em;font-weight:700;">NEWSLETTER / JOIN 5K+</span><h3 style="color:#fff;font-size:clamp(1.4rem,3vw,2rem);margin:12px 0;">Get Premium Growth Tips Weekly</h3><p style="color:#a1a1a1;font-size:0.9rem;">Join 5,000+ businesses getting luxury web tips, SEO secrets and growth hacks – free, no spam.</p><div class="newsletter-form"><input type="text" placeholder="Your Name"><input type="email" placeholder="Your Email"><button>Subscribe →</button></div><p style="color:#666;font-size:0.7rem;margin-top:12px;">🔒 Privacy: No spam, unsubscribe anytime, 100% secure.</p></div></div>
@@ -2394,7 +2293,7 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   <div class="container"><div class="section-header reveal" style="margin-bottom:28px;"><span class="section-label">DOWNLOAD CENTER / RESOURCES</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem);">Download <span class="gold-g">Premium Resources</span></h2></div><div class="download-grid"><div class="download-card reveal"><div class="download-icon">📄</div><h4 style="color:#fff;font-size:0.9rem;">Company Profile</h4><p style="color:#666;font-size:0.72rem;margin:6px 0;">PDF • 2.4 MB</p><a href="#" class="s-link" style="font-size:0.8rem;">Download →</a></div><div class="download-card reveal"><div class="download-icon">📋</div><h4 style="color:#fff;font-size:0.9rem;">Service Brochure</h4><p style="color:#666;font-size:0.72rem;margin:6px 0;">PDF • 1.8 MB</p><a href="#" class="s-link" style="font-size:0.8rem;">Download →</a></div><div class="download-card reveal"><div class="download-icon">💰</div><h4 style="color:#fff;font-size:0.9rem;">Price List</h4><p style="color:#666;font-size:0.72rem;margin:6px 0;">PDF • 1.2 MB</p><a href="#" class="s-link" style="font-size:0.8rem;">Download →</a></div><div class="download-card reveal"><div class="download-icon">🖼️</div><h4 style="color:#fff;font-size:0.9rem;">Portfolio PDF</h4><p style="color:#666;font-size:0.72rem;margin:6px 0;">PDF • 5.6 MB</p><a href="#" class="s-link" style="font-size:0.8rem;">Download →</a></div><div class="download-card reveal"><div class="download-icon">📊</div><h4 style="color:#fff;font-size:0.9rem;">Business Presentation</h4><p style="color:#666;font-size:0.72rem;margin:6px 0;">PPTX • 3.2 MB</p><a href="#" class="s-link" style="font-size:0.8rem;">Download →</a></div></div></div>
 </section>
 <section id="free-resources" class="resources-section">
-  <div class="container"><div class="section-header reveal" style="margin-bottom:28px;"><span class="section-label">FREE RESOURCES / GIVEAWAY</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem);">Free Tools Worth <span class="gold-g">₹50k+</span></h2></div><div class="resources-grid"><div class="resource-card reveal"><div class="resource-icon">🎨</div><div><h4 style="color:#fff;font-size:0.9rem;">Free Templates</h4><p style="color:#a1a1a1;font-size:0.8rem;">10 premium website templates – luxury black & gold</p></div></div><div class="resource-card reveal"><div class="resource-icon">◈</div><div><h4 style="color:#fff;font-size:0.9rem;">Free Icons Pack</h4><p style="color:#a1a1a1;font-size:0.8rem;">500+ luxury icons for your projects</p></div></div><div class="resource-card reveal"><div class="resource-icon">✅</div><div><h4 style="color:#fff;font-size:0.9rem;">SEO Checklist</h4><p style="color:#a1a1a1;font-size:0.8rem;">Complete SEO checklist that ranked 100+ sites #1</p></div></div><div class="resource-card reveal"><div class="resource-icon">📝</div><div><h4 style="color:#fff;font-size:0.9rem;">Website Checklist</h4><p style="color:#a1a1a1;font-size:0.8rem;">50-point checklist before launching website</p></div></div><div class="resource-card reveal"><div class="resource-icon">🚀</div><div><h4 style="color:#fff;font-size:0.9rem;">Startup Guide</h4><p style="color:#a1a1a1;font-size:0.8rem;">How to start online business in Bihar – step by step</p></div></div><div class="resource-card reveal"><div class="resource-icon">💼</div><div><h4 style="color:#fff;font-size:0.9rem;">Business Guide</h4><p style="color:#a1a1a1;font-size:0.8rem;">Scale your business 10x with digital – proven playbook</p></div></div></div></div>
+  <div class="container"><div class="section-header reveal" style="margin-bottom:28px;"><span class="section-label">FREE RESOURCES / GIVEAWAY</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem);">Free Tools Worth <span class="gold-g">₹50k+</span></h2></div><div class="resources-grid"><div class="resource-card reveal"><div class="resource-icon">🎨</div><div><h4 style="color:#fff;font-size:0.9rem;"></h4><p style="color:#a1a1a1;font-size:0.8rem;">Scale your business 10x with digital – proven playbook</p></div></div></div></div>
 </section>
 <section id="social-feed" class="social-section">
   <div class="container"><div class="section-header reveal" style="margin-bottom:28px;"><span class="section-label">SOCIAL FEED / CONNECT</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.2rem);">Join Our <span class="gold-g">Community</span></h2></div><div class="social-grid reveal"><a href="#" class="social-card fb"><span>📘</span> Facebook • 12k Followers</a><a href="#" class="social-card ig"><span>📸</span> Instagram • 8k Followers</a><a href="#" class="social-card li"><span>💼</span> LinkedIn • 5k Followers</a><a href="#" class="social-card yt"><span>▶️</span> YouTube • 3k Subscribers</a><a href="#" class="social-card tg"><span>✈️</span> Telegram • 2k Members</a></div></div>
@@ -2453,7 +2352,7 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
       <div class="tl-item"><div class="tl-dot">🚀</div><div class="tl-content"><div class="tl-year">2018 • Company Started</div><h4 style="color:#fff;margin-bottom:8px;">Founded in Madhepura</h4><p style="color:#a1a1a1;font-size:0.88rem;">Started with a small room, one laptop and a big dream to digitize Bihar's businesses.</p></div></div>
       <div class="tl-item"><div class="tl-dot">🤝</div><div class="tl-content"><div class="tl-year">2019 • First Client</div><h4 style="color:#fff;margin-bottom:8px;">First Premium Client</h4><p style="color:#a1a1a1;font-size:0.88rem;">Delivered first website for local business, got 5-star review and referral that changed everything.</p></div></div>
       <div class="tl-item"><div class="tl-dot">💯</div><div class="tl-content"><div class="tl-year">2021 • 100 Projects</div><h4 style="color:#fff;margin-bottom:8px;">Century of Excellence</h4><p style="color:#a1a1a1;font-size:0.88rem;">Crossed 100 projects milestone, expanded team to 5 members, opened office in Madhepura main market.</p></div></div>
-      <div class="tl-item"><div class="tl-dot">👥</div><div class="tl-content"><div class="tl-year">2023 • 500 Clients</div><h4 style="color:#fff;margin-bottom:8px;">500+ Happy Clients</h4><p style="color:#a1a1a1;font-size:0.88rem;">500+ clients across Bihar, luxury rebrand to black & gold, Awwwards-level standards implemented.</p></div></div>
+      <div class="tl-item"><div class="tl-dot">👥</div><div class="tl-content"><div class="tl-year">2023 • 500 Clients</div><h4 style="color:#fff;margin-bottom:8px;"></h4><p style="color:#a1a1a1;font-size:0.88rem;">500+ clients across Bihar, luxury rebrand to black & gold, Awwwards-level standards implemented.</p></div></div>
       <div class="tl-item"><div class="tl-dot">🌍</div><div class="tl-content"><div class="tl-year">2024 • Expansion</div><h4 style="color:#fff;margin-bottom:8px;">Pan-India Expansion</h4><p style="color:#a1a1a1;font-size:0.88rem;">Expanded to serve clients across India, launched AI automation division, crossed 1000+ projects.</p></div></div>
       <div class="tl-item"><div class="tl-dot">🔮</div><div class="tl-content"><div class="tl-year">2026 • Future Vision</div><h4 style="color:#fff;margin-bottom:8px;">Global Luxury Agency</h4><p style="color:#a1a1a1;font-size:0.88rem;">Vision to become India's most trusted luxury agency born from Tier-3 city, serving worldwide.</p></div></div>
     </div>
@@ -2658,8 +2557,6 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   <div class="container"><div class="notfound-illust">404</div><h2 style="color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:12px;">Page Not <span class="gold-g">Found</span></h2><p style="color:#a1a1a1;max-width:500px;margin:0 auto 24px;">Oops! The page you're looking for doesn't exist or has been moved. Let's get you back to luxury experience.</p><div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><a href="#home" class="btn-order" style="padding:12px 24px;text-decoration:none;">← Back Home</a><a href="#services" class="btn-quote" style="padding:12px 24px;text-decoration:none;">Explore Services</a></div><div style="max-width:400px;margin:32px auto 0;"><input type="text" placeholder="Search our site..." style="width:100%;padding:14px 18px;border-radius:100px;background:rgba(20,20,20,0.8);border:1px solid rgba(212,175,55,0.15);color:#fff;outline:none;"></div></div>
 </section>
 </main>
-
-
 
 <div class="back-top" id="backTop">↑</div>
 <a href="https://wa.me/917295979576" class="float-wa" aria-label="WhatsApp">W</a>
@@ -2938,228 +2835,7 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   // Open Graph
   const ogTags=[
     {property:"og:title",content:"BiharWeb Official Madhepura – Premium Digital Agency | 1000+ Projects"},
-    {property:"og:description",content:"Madhepura's first luxury digital agency. Awwwards-level websites, apps, branding. 4.9/5 rated, 24/7 support."},
-    {property:"og:type",content:"website"},
-    {property:"og:url",content:"https://biharweb.com"},
-    {property:"og:image",content:"https://biharweb.com/og-image.jpg"},
-    {name:"twitter:card",content:"summary_large_image"},
-    {name:"twitter:title",content:"BiharWeb Official Madhepura – Luxury Digital Agency"},
-    {name:"twitter:description",content:"1000+ projects, 500+ clients, 4.9 rated. Premium websites from ₹12,999"},
-    {name:"keywords",content:"BiharWeb, Madhepura, website design Bihar, eCommerce, school website, Android app, SEO, digital marketing, luxury agency, business website, college website, branding"},
-    {name:"robots",content:"index, follow"},
-    {rel:"canonical",href:"https://biharweb.com"}
-  ];
-  ogTags.forEach(tag=>{
-    let el=document.createElement(tag.rel?"link":"meta");
-    if(tag.rel){el.rel=tag.rel;el.href=tag.href;} else {if(tag.property) el.setAttribute("property",tag.property);if(tag.name) el.setAttribute("name",tag.name);el.content=tag.content;}
-    document.head.appendChild(el);
-  });
-  // JSON-LD Structured Data
-  const schemas=[
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"BiharWeb Official Madhepura",
-      "url":"https://biharweb.com",
-      "logo":"https://biharweb.com/logo.png",
-      "description":"Madhepura's first luxury digital agency – 1000+ projects, 500+ clients, 4.9 rated",
-      "address":{"@type":"PostalAddress","addressLocality":"Madhepura","addressRegion":"Bihar","postalCode":"852113","addressCountry":"IN"},
-      "contactPoint":{"@type":"ContactPoint","telephone":"+91 7295979576","contactType":"customer service","areaServed":"IN","availableLanguage":["en","hi"]},
-      "sameAs":["https://facebook.com/biharweb","https://instagram.com/biharweb","https://linkedin.com/company/biharweb"]
-    },
-    {
-      "@context":"https://schema.org",
-      "@type":"FAQPage",
-      "mainEntity":[
-        {"@type":"Question","name":"How much does a website cost?","acceptedAnswer":{"@type":"Answer","text":"Business website starts at ₹12,999, eCommerce at ₹29,999, School at ₹19,999. Custom quote via calculator."}},
-        {"@type":"Question","name":"What is delivery time?","acceptedAnswer":{"@type":"Answer","text":"Standard 7-14 days, Fast 7 days, Express 3 days. 98% on-time delivery."}},
-        {"@type":"Question","name":"Do you provide hosting?","acceptedAnswer":{"@type":"Answer","text":"Yes, domain + hosting + SSL + backups included, ₹2k/year hosting."}}
-      ]
-    },
-    {
-      "@context":"https://schema.org",
-      "@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://biharweb.com/#home"},
-        {"@type":"ListItem","position":2,"name":"Services","item":"https://biharweb.com/#services"},
-        {"@type":"ListItem","position":3,"name":"Portfolio","item":"https://biharweb.com/#portfolio"},
-        {"@type":"ListItem","position":4,"name":"Contact","item":"https://biharweb.com/#contact-final"}
-      ]
-    }
-  ];
-  schemas.forEach(s=>{
-    const script=document.createElement('script');script.type='application/ld+json';script.textContent=JSON.stringify(s);document.head.appendChild(script);
-  });
-  // Contact form floating labels + validation
-  const fields=document.querySelectorAll('.form-field input, .form-field textarea, .form-field select');
-  fields.forEach(f=>{
-    f.addEventListener('blur',()=>{
-      const parent=f.closest('.form-field');
-      if(f.hasAttribute('required') && !f.value.trim()){
-        parent.classList.add('error');
-      } else {
-        parent.classList.remove('error');
-        if(f.type==='email' && f.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value)){
-          parent.classList.add('error');
-          parent.querySelector('.form-error').textContent='Invalid email format';
-        }
-      }
-    });
-    f.addEventListener('input',()=>{f.closest('.form-field').classList.remove('error');});
-  });
-  const finalSubmit=document.getElementById('finalSubmit');
-  const finalWA=document.getElementById('finalWhatsApp');
-  const formSuccess=document.getElementById('formSuccess');
-  function collectData(){
-    return {
-      name:document.getElementById('fName').value,
-      email:document.getElementById('fEmail').value,
-      phone:document.getElementById('fPhone').value,
-      company:document.getElementById('fCompany').value,
-      budget:document.getElementById('fBudget').value,
-      service:document.getElementById('fService').value,
-      message:document.getElementById('fMessage').value
-    };
-  }
-  function validateFinal(){
-    let valid=true;
-    const name=document.getElementById('fName'), phone=document.getElementById('fPhone'), budget=document.getElementById('fBudget'), service=document.getElementById('fService');
-    if(!name.value.trim()){name.closest('.form-field').classList.add('error');valid=false;}
-    if(!phone.value.trim()){phone.closest('.form-field').classList.add('error');valid=false;}
-    if(!budget.value){budget.closest('.form-field').classList.add('error');valid=false;}
-    if(!service.value){service.closest('.form-field').classList.add('error');valid=false;}
-    return valid;
-  }
-  if(finalSubmit){
-    finalSubmit.addEventListener('click',()=>{
-      if(!validateFinal()){
-        showPopup('popupError','Please fill all required fields *');
-        return;
-      }
-      showPopup('popupLoading','');
-      setTimeout(()=>{
-        closePopup('popupLoading');
-        const d=collectData();
-        showPopup('popupSuccess',`Thank you ${d.name}! We received your ${d.service} enquiry (Budget ${d.budget}). Our team will contact you within 5 minutes on WhatsApp.`);
-        formSuccess.style.display='block';
-        setTimeout(()=>formSuccess.style.display='none',5000);
-      },1500);
-    });
-  }
-  if(finalWA){
-    finalWA.addEventListener('click',()=>{
-      if(!validateFinal()){showPopup('popupError','Please fill required fields for WhatsApp quote');return;}
-      const d=collectData();
-      const text=`Hi BiharWeb Official! 👋%0A%0A*Final Contact Form*%0A%0A*Name:* ${encodeURIComponent(d.name)}%0A*Phone:* ${encodeURIComponent(d.phone)}%0A*Email:* ${encodeURIComponent(d.email)}%0A*Company:* ${encodeURIComponent(d.company)}%0A*Budget:* ${encodeURIComponent(d.budget)}%0A*Service:* ${encodeURIComponent(d.service)}%0A*Message:* ${encodeURIComponent(d.message)}`;
-      window.open('https://wa.me/917295979576?text='+text,'_blank');
-    });
-  }
-  // Legal accordion
-  document.querySelectorAll('.legal-card').forEach(card=>{
-    card.addEventListener('click',()=>{card.classList.toggle('active');});
-  });
-  // Popups
-  window.showPopup=function(id,msg){
-    const popup=document.getElementById(id);
-    if(msg && id==='popupSuccess') document.getElementById('popupSuccessText').textContent=msg;
-    if(msg && id==='popupError') document.getElementById('popupErrorText').textContent=msg;
-    popup.classList.add('show');
-    document.getElementById('popupOverlay').classList.add('show');
-    document.body.style.overflow='hidden';
-  };
-  window.closePopup=function(id){
-    document.getElementById(id).classList.remove('show');
-    document.getElementById('popupOverlay').classList.remove('show');
-    document.body.style.overflow='';
-  };
-  document.getElementById('popupOverlay').addEventListener('click',()=>{
-    document.querySelectorAll('.popup').forEach(p=>p.classList.remove('show'));
-    document.getElementById('popupOverlay').classList.remove('show');
-    document.body.style.overflow='';
-  });
-  // Live chat widget
-  const chatBtn=document.getElementById('chatMainBtn');
-  const chatWidget=document.getElementById('liveChatWidget');
-  let chatOpen=false;
-  if(chatBtn){
-    chatBtn.addEventListener('click',()=>{
-      chatOpen=!chatOpen;
-      if(chatOpen) chatWidget.classList.add('open'); else chatWidget.classList.remove('open');
-      chatBtn.querySelector('.chat-badge').style.display='none';
-    });
-  }
-  // Micro interactions: ripple, glow, float
-  document.querySelectorAll('.btn-order,.btn-quote,.cta-btn,.btn-primary').forEach(btn=>{
-    btn.addEventListener('mouseenter',()=>{btn.style.boxShadow='0 12px 28px rgba(212,175,55,0.32),0 0 20px rgba(212,175,55,0.15)';});
-    btn.addEventListener('mouseleave',()=>{btn.style.boxShadow='';});
-  });
-  // Back to top already handled, ensure footer link
-  // Accessibility: focus states
-  document.querySelectorAll('a,button,input,select,textarea').forEach(el=>{
-    el.addEventListener('focus',()=>{el.style.outline='2px solid #D4AF37';el.style.outlineOffset='2px';});
-    el.addEventListener('blur',()=>{el.style.outline='';el.style.outlineOffset='';});
-  });
-  // Lazy loading for animations via rAF
-  let ticking=false;
-  window.addEventListener('scroll',()=>{
-    if(!ticking){
-      requestAnimationFrame(()=>{
-        // Any scroll heavy logic already optimized
-        ticking=false;
-      });
-      ticking=true;
-    }
-  },{passive:true});
-  // Final reveal for new sections
-  const obs=new IntersectionObserver((entries)=>{entries.forEach(en=>{if(en.isIntersecting)en.target.classList.add('active');});},{threshold:0.15});
-  document.querySelectorAll('.contact-card,.glass-form,.map-section,.legal-card,.footer-col').forEach(el=>obs.observe(el));
-})();
-</script>
-<footer class="footer-luxury">
-  <div class="footer-grid-lux">
-    <div class="footer-col"><div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><div style="width:42px;height:42px;border-radius:12px;background:var(--gold-gradient);display:flex;align-items:center;justify-content:center;color:#000;font-family:'Playfair Display';font-weight:800;">BW</div><div><strong style="color:#fff;font-size:0.95rem;display:block;">BIHARWEB OFFICIAL</strong><span style="color:#D4AF37;font-size:0.62rem;letter-spacing:0.18em;">MADHEPURA • PREMIUM</span></div></div><p style="color:#a1a1a1;font-size:0.88rem;line-height:1.6;margin-bottom:16px;">Madhepura's first luxury digital agency. We craft premium digital experiences from Bihar to global with black & gold aesthetics, Awwwards standards, 1000+ projects delivered.</p><div class="footer-social"><a href="#">IG</a><a href="#">FB</a><a href="#">IN</a><a href="#">YT</a><a href="#">X</a><a href="#">Dr</a><a href="#">Be</a></div><div style="margin-top:20px;padding:14px;border-radius:12px;background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.12);"><div style="color:#fff;font-size:0.8rem;font-weight:600;">📍 Madhepura, Bihar, India 852113</div><div style="color:#a1a1a1;font-size:0.78rem;margin-top:4px;">Near Main Market • 24/7 Support • 5 Star Rated 4.9/5</div></div></div>
-    <div class="footer-col"><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#products-premium">Products</a><a href="#pricing">Pricing</a><a href="#team">Team</a><a href="#contact-final">Contact</a></div>
-    <div class="footer-col"><h4>Services</h4><a href="#products-premium">Business Website</a><a href="#products-premium">eCommerce</a><a href="#products-premium">School & College</a><a href="#products-premium">Android App</a><a href="#products-premium">SEO Package</a><a href="#products-premium">Digital Marketing</a><a href="#products-premium">Branding</a><a href="#products-premium">AI Automation</a></div>
-    <div class="footer-col"><h4>Resources</h4><a href="#blog">Blog</a><a href="#knowledge">Knowledge Center</a><a href="#faq">FAQ</a><a href="#downloads">Download Center</a><a href="#free-resources">Free Resources</a><a href="#careers">Career</a><a href="#success-stories">Case Studies</a><a href="#legal">Legal & Policies</a></div>
-    <div class="footer-col"><h4>Newsletter</h4><p style="color:#a1a1a1;font-size:0.82rem;margin-bottom:12px;">Join 5k+ businesses getting luxury growth tips weekly – free, no spam.</p><div style="display:flex;gap:8px;margin-bottom:12px;"><input type="email" placeholder="Your Email" style="flex:1;padding:10px 14px;border-radius:100px;background:rgba(10,10,10,0.8);border:1px solid rgba(212,175,55,0.12);color:#fff;font-size:0.82rem;outline:none;"><button style="padding:10px 16px;border-radius:100px;background:var(--gold-gradient);border:none;color:#000;font-weight:700;font-size:0.82rem;cursor:pointer;">→</button></div><p style="color:#666;font-size:0.7rem;">🔒 No spam, unsubscribe anytime. Privacy protected.</p><h4 style="margin-top:20px;">Contact</h4><p style="color:#a1a1a1;font-size:0.82rem;line-height:1.6;">📞 +91 7295979576<br>✉️ biharwebofficial@gmail.com<br>💬 WhatsApp 24/7<br>📍 Madhepura, Bihar</p></div>
-  </div>
-  <div class="footer-bottom-lux"><span>© 2026 BiharWeb Official Madhepura • Crafted with Precision • Made in Bihar, For Bharat & Global 🌍</span><span style="display:flex;gap:16px;"><a href="#legal" style="color:#666;text-decoration:none;">Privacy</a><a href="#legal" style="color:#666;text-decoration:none;">Terms</a><a href="#legal" style="color:#666;text-decoration:none;">Sitemap</a><a href="#notfound" style="color:#666;text-decoration:none;">404</a></span></div>
-</footer>
-<a href="#home" class="logo"><div class="logo-mark">BW</div><div class="logo-text"><strong>BIHARWEB OFFICIAL</strong><span>MADHEPURA • PREMIUM</span></div></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#clients">Clients</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button class="icon-btn" id="searchBtn" aria-label="Search">🔍</button>
-      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
-      <a href="#contact" class="cta-btn">Start Project</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</header>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#clients">Clients</a><a href="#products">Products</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
-</div>
-<div class="search-overlay" id="searchOverlay"><div class="search-box"><input type="text" placeholder="Search services, projects..."><button class="icon-btn" id="closeSearch">✕</button></div></div>
-
-<main>
-<section id="home" class="hero">
-  <div class="hero-bg"><div class="hero-gradient"></div><div class="hero-grid"></div><canvas id="hero-canvas"></canvas><div class="hero-particles"><span></span><span></span><span></span><span></span><span></span></div><div class="hero-shapes"><div class="shape shape1" data-parallax="0.1"></div><div class="shape shape2" data-parallax="0.15"></div><div class="shape shape3" data-parallax="0.08"></div></div></div>
-  <div class="hero-container">
-    <div class="hero-content">
-      <div class="hero-badge reveal"><span class="dot"></span> Available for new projects • Madhepura, Bihar</div>
-      <h1 class="hero-title reveal"><span class="white">BiharWeb</span> <span class="gold">Official</span></h1>
-      <div class="hero-subtitle reveal">Madhepura's Premium Digital Solutions</div>
-      <p class="hero-desc reveal">We craft luxury digital experiences that elevate brands from Madhepura to global markets. Award-winning design, cutting-edge development, unmatched precision.</p>
-      <div class="hero-ctas reveal"><a href="#services" class="btn-primary">Explore Services →</a><a href="#contact" class="btn-secondary">Contact Now</a></div>
-      <div class="hero-trust reveal"><div class="avatars"><span>AK</span><span>SR</span><span>PM</span><span>+50</span></div><div style="color:#a1a1a1;font-size:0.88rem;">⭐⭐⭐⭐⭐ <span style="color:#fff;font-weight:700;">4.9/5 Rated</span> • Trusted by 50+ brands</div></div>
+    {property:"og:description",content:"Madhepura's first luxury digital agency. Awwwards-level websites, apps, branding. </div></div>
       <div class="hero-social reveal"><a href="#" class="social-ic">IG</a><a href="#" class="social-ic">IN</a><a href="#" class="social-ic">Dr</a><a href="#" class="social-ic">Be</a></div>
     </div>
     <div class="hero-visual reveal">
@@ -3171,8 +2847,6 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   </div>
   <div class="scroll-indicator"><div class="mouse-ic"><div class="wheel"></div></div><span>SCROLL</span></div>
 </section>
-
-
 
 <section id="services" class="services-section">
   <div class="orb orb1" style="right:-15%;left:auto;opacity:0.09;"></div><div class="grid-pat"></div>
@@ -3214,12 +2888,11 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   </div></div>
 </section>
 
-<section id="clients" class="clients-section"><div class="container"><div class="section-header reveal" style="margin-bottom:36px;"><span class="section-label">TRUSTED BY 50+ BRANDS</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">Trusted by <span class="gold-g">Premium Brands</span></h2></div><div class="logo-track reveal"><div class="logo-row"><div class="client-logo">TATA MOTORS</div><div class="client-logo">BIHAR GOV</div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div><div class="client-logo">MADHEPURA COLLEGE</div><div class="client-logo">BIHAR HAAT</div><div class="client-logo">KISAN CONNECT</div><div class="client-logo">ENTERPRISES HUB</div><div class="client-logo">TATA MOTORS</div><div class="client-logo">BIHAR GOV</div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div></div></div></div></section>
+<section id="clients" class="clients-section"><div class="container"><div class="section-header reveal" style="margin-bottom:36px;"><span class="section-label">TRUSTED BY 50+ BRANDS</span><h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);">Trusted by <span class="gold-g">Premium Brands</span></h2></div><div class="logo-track reveal"><div class="logo-row"><div class="client-logo"></div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div><div class="client-logo">MADHEPURA COLLEGE</div><div class="client-logo">BIHAR HAAT</div><div class="client-logo">KISAN CONNECT</div><div class="client-logo">ENTERPRISES HUB</div><div class="client-logo"></div><div class="client-logo">SUNRISE SCHOOL</div><div class="client-logo">LUXE JEWELS</div></div></div></div></section>
 
 <section id="products" class="awards-section"><div class="orb orb2"></div><div class="grid-pat"></div><div class="container"><div class="section-header reveal"><span class="section-label">05 / CASE STUDIES & AWARDS</span><h2 class="section-title">Impact That <span class="gold-g">Speaks</span></h2><p class="section-desc">Real challenges, premium solutions, measurable results.</p></div><div class="case-grid"><div class="case-card reveal"><span class="case-label">Case Study 01</span><h4 style="color:#fff;margin:12px 0;">Bihar Haat E-commerce Growth</h4><p style="color:#a1a1a1;"><strong style="color:#fff;">Challenge:</strong> Zero online presence.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Solution:</strong> Luxury e-commerce with story pages.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Result:</strong> 340% growth, 12k+ orders.</p></div><div class="case-card reveal"><span class="case-label">Case Study 02</span><h4 style="color:#fff;margin:12px 0;">Sunrise School Transformation</h4><p style="color:#a1a1a1;"><strong style="color:#fff;">Challenge:</strong> Manual admissions chaos.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Solution:</strong> ERP + PWA + WhatsApp.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Result:</strong> 80% time saved, 200% enquiries.</p></div><div class="case-card reveal"><span class="case-label">Case Study 03</span><h4 style="color:#fff;margin:12px 0;">Kisan Connect Impact</h4><p style="color:#a1a1a1;"><strong style="color:#fff;">Challenge:</strong> Farmers exploited.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Solution:</strong> App with live mandi rates.</p><p style="color:#a1a1a1;"><strong style="color:#fff;">Result:</strong> 10k+ farmers, 25% higher price.</p></div></div><div class="awards-grid"><div class="award-card reveal"><div class="award-ic">🏆</div><span class="award-num" data-target="12">0</span><h4>Award Winning</h4><p style="color:#a1a1a1;font-size:0.84rem;">Luxury aesthetics recognized.</p></div><div class="award-card reveal"><div class="award-ic">⭐</div><span class="award-num" data-target="100">0</span><span style="color:#D4AF37;font-weight:800;">%</span><h4>Satisfaction</h4><p style="color:#a1a1a1;font-size:0.84rem;">Zero compromise quality.</p></div><div class="award-card reveal"><div class="award-ic">⚡</div><span class="award-num" data-target="48">0</span><span style="color:#D4AF37;">h</span><h4>Fast Delivery</h4><p style="color:#a1a1a1;font-size:0.84rem;">Average under 14 days.</p></div><div class="award-card reveal"><div class="award-ic">🎖</div><span class="award-num" data-target="5">0</span><span style="color:#D4AF37;">+</span><h4>Years</h4><p style="color:#a1a1a1;font-size:0.84rem;">Certified by Google, Meta.</p></div></div></div></section>
 
 <section id="gallery" class="gallery-section"><div class="orb orb1"></div><div class="grid-pat"></div><div class="container"><div class="section-header reveal"><span class="section-label">06 / GALLERY</span><h2 class="section-title">Craftsmanship In <span class="gold-g">Every Frame</span></h2><p class="section-desc">Visual diary of luxury interfaces we created.</p></div><div class="gallery-filters reveal"><button class="f-btn g-f-btn active" data-filter="all">All Works</button><button class="f-btn g-f-btn" data-filter="websites">Websites</button><button class="f-btn g-f-btn" data-filter="apps">Apps</button><button class="f-btn g-f-btn" data-filter="branding">Branding</button></div><div class="gal-grid reveal"><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#1e1e1e,#D4AF37);"></div><div class="gal-overlay">Luxury Business Website</div></div><div class="gal-item" data-category="apps"><div class="gal-thumb" style="background:linear-gradient(135deg,#2a1a1a,#F9E076);height:200px;"></div><div class="gal-overlay">Kisan Connect UI</div></div><div class="gal-item" data-category="branding"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a2a1a,#D4AF37);height:300px;"></div><div class="gal-overlay">Luxe Jewels Identity</div></div><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a1a2a,#8C7000);height:240px;"></div><div class="gal-overlay">School Portal Dashboard</div></div><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#2a2a1a,#D4AF37);height:280px;"></div><div class="gal-overlay">E-commerce Product Page</div></div><div class="gal-item" data-category="apps"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a1a1a,#F9E076);height:220px;"></div><div class="gal-overlay">Android App Screens</div></div><div class="gal-item" data-category="branding"><div class="gal-thumb" style="background:linear-gradient(135deg,#1a2a2a,#D4AF37);height:260px;"></div><div class="gal-overlay">Brand Guidelines</div></div><div class="gal-item" data-category="websites"><div class="gal-thumb" style="background:linear-gradient(135deg,#1e1e1e,#D4AF37);height:200px;"></div><div class="gal-overlay">Portfolio Showcase</div></div></div></div><div id="lightbox" class="lightbox"><button class="lb-close">✕</button><button class="lb-nav lb-prev">‹</button><div><div id="lb-color"></div></div><button class="lb-nav lb-next">›</button></div></section>
-
 
 <div class="section-transition"><div class="transition-glow"></div><div class="transition-glass">PRODUCTS</div></div>
 
@@ -3590,7 +3263,6 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   document.querySelectorAll('.analytics-card').forEach(c=>analyticsObs.observe(c));
 })();
 </script>
-
 
 <script id="prompt12-js">
 (function(){
@@ -4081,7 +3753,6 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
 })();
 </script>
 
-
 <script id="perf-optimizer-p15">
 // === PROMPT 15: ULTIMATE PERFORMANCE OPTIMIZER - KEEP ALL FEATURES ===
 (function(){
@@ -4324,7 +3995,6 @@ body.light-mode .section-header h2,body.light-mode .portal-card h4,body.light-mo
   console.log('%cBiharWeb Official - Abinash Singh - Production Ready','color:#D4AF37;font-weight:800;');
 })();
 </script>
-
 
 <script>
 // MASTER 1-14 - PWA + Perf + Official Identity
