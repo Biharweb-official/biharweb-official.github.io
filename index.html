@@ -4357,46 +4357,50 @@ document.querySelectorAll('a[href^="http"]').forEach(a=>{if(!a.href.includes(loc
 document.querySelectorAll('form').forEach(f=>{f.addEventListener('submit',e=>{e.preventDefault(); window.open('https://wa.me/917295979576?text=Hi%20Abinash,%20I%20need%20website%20from%20BiharWeb%20Official','_blank');});});
 </script>
 <style>
-  /* 1. Hide Extra Unwanted Toggles */
+  /* 1. Header ko Permanent Top par Freeze karne ke liye */
+  header, nav, .navbar, .header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 99999 !important;
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  body {
+    padding-top: 70px !important;
+    overflow-x: hidden !important;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* 2. Unwanted Extra Toggles Hide */
   #aiToggle,
   .notif-toggle,
   .lang-switcher {
     display: none !important;
   }
 
-  /* 2. Global Smooth Scroll & Hardware Acceleration (Stops Blink) */
-  html, body {
+  /* 3. Smooth Scroll & Blink Killer Rules */
+  html {
     scroll-behavior: smooth !important;
     overflow-x: hidden !important;
-    -webkit-tap-highlight-color: transparent !important;
   }
 
-  /* 3. Stop All Flickering, Flashing & Border Glow on Tap/Click */
-  *, *::before, *::after {
-    -webkit-tap-highlight-color: transparent !important;
-    -webkit-focus-ring-color: transparent !important;
-  }
-
-  a, button, input, select, textarea, :focus, :active {
+  a, button, input, select, textarea, :focus, :active, :hover {
     outline: none !important;
     box-shadow: none !important;
   }
 
-  /* 4. Force GPU Layer for All Website Elements (Permanent Flickering Fix) */
-  body * {
+  * {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
   }
 
-  /* 5. Fix AOS Animation Jump/Flicker (If used on site) */
   [data-aos] {
     opacity: 1 !important;
-    transform: translate(0, 0) !important;
-    transition-property: transform, opacity !important;
-  }
-</style>
+    transform: none !important;
+    transition: none !important;
   }
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://biharweb.github.io/#org","name":"BiharWeb Official","url":"https://biharweb.github.io/","founder":{"@type":"Person","name":"Abinash Singh"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-7295979576","contactType":"customer service"}},{"@type":"LocalBusiness","name":"BiharWeb Official - Abinash Singh","address":{"@type":"PostalAddress","addressLocality":"Madhepura","addressRegion":"Bihar","postalCode":"852113","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":25.9231,"longitude":86.7927},"telephone":"+917295979576"},{"@type":"WebSite","url":"https://biharweb.github.io/","name":"BiharWeb Official"},{"@type":"Person","name":"Abinash Singh","jobTitle":"Founder & AI Director","telephone":"+917295979576"}]}</script>
