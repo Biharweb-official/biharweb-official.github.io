@@ -4357,30 +4357,46 @@ document.querySelectorAll('a[href^="http"]').forEach(a=>{if(!a.href.includes(loc
 document.querySelectorAll('form').forEach(f=>{f.addEventListener('submit',e=>{e.preventDefault(); window.open('https://wa.me/917295979576?text=Hi%20Abinash,%20I%20need%20website%20from%20BiharWeb%20Official','_blank');});});
 </script>
 <style>
-  /* 1. Unwanted Toggles Hide */
+  /* 1. Hide Extra Unwanted Toggles */
   #aiToggle,
   .notif-toggle,
   .lang-switcher {
     display: none !important;
   }
 
-  /* 2. Permanent Fix for Section Jump / Screen Blink */
+  /* 2. Global Smooth Scroll & Hardware Acceleration (Stops Blink) */
   html, body {
     scroll-behavior: smooth !important;
     overflow-x: hidden !important;
-  }
-
-  /* Disable outline glow and blue highlight flash on click */
-  a, button, input, select, textarea, :focus {
-    outline: none !important;
-    box-shadow: none !important;
     -webkit-tap-highlight-color: transparent !important;
   }
 
-  /* Section focus flicker removal */
-  section, div {
+  /* 3. Stop All Flickering, Flashing & Border Glow on Tap/Click */
+  *, *::before, *::after {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-focus-ring-color: transparent !important;
+  }
+
+  a, button, input, select, textarea, :focus, :active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* 4. Force GPU Layer for All Website Elements (Permanent Flickering Fix) */
+  body * {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  /* 5. Fix AOS Animation Jump/Flicker (If used on site) */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+    transition-property: transform, opacity !important;
+  }
+</style>
   }
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://biharweb.github.io/#org","name":"BiharWeb Official","url":"https://biharweb.github.io/","founder":{"@type":"Person","name":"Abinash Singh"},"contactPoint":{"@type":"ContactPoint","telephone":"+91-7295979576","contactType":"customer service"}},{"@type":"LocalBusiness","name":"BiharWeb Official - Abinash Singh","address":{"@type":"PostalAddress","addressLocality":"Madhepura","addressRegion":"Bihar","postalCode":"852113","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":25.9231,"longitude":86.7927},"telephone":"+917295979576"},{"@type":"WebSite","url":"https://biharweb.github.io/","name":"BiharWeb Official"},{"@type":"Person","name":"Abinash Singh","jobTitle":"Founder & AI Director","telephone":"+917295979576"}]}</script>
